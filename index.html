@@ -4,7 +4,6 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 
@@ -17,67 +16,103 @@
         
 	</style>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
 <body>
-   
-<!--------navigation bar starts here----------->
-    <div class="navbar-wrapper">
-        <div class="container">
-            <nav class="navbar navbar-inverse navbar-static-top">    
+
+<!--    ----------------Navigation bar------------------>
+<div class="navbar-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-static-top">
           <div class="container-fluid">
-            <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#">Car-Company</a>
+            <a class="navbar-brand" href="#">Shift-Cars</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Find Us 
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">London</a></li>
+                    <li><a class="dropdown-item" href="#">NewYork</a></li>
+                    <li><a class="dropdown-item" href="#">Canberra</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Opening Soon at:</li>
+                    <li><a class="dropdown-item" href="#">Colombo</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+              </ul>
             </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-                  <ul class="nav navbar-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Brands</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Showrooms <span class="caret"></span></a>
-                          <ul id="login" class="dropdown-menu">
-                              <li>
-                                  <div class="row">
-                                      <div class="col-md-12">
-                                          Find Us in: 
-                                          <div class="social-buttons">
-                                              <li><a href="#">Los Angeles</a></li>
-                                              <li><a href="#">New York</a></li>
-                                              <li><a href="#">Houston</a></li>
-                                              <li><a href="#">Las Vegas</a></li>
-                                              <li role="separator" class="divider"></li>
-                                              <li class="dropdown-header">Opening Soon in:</li>
-                                              <li><a href="#">Colombo</a></li>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </li>
-                          </ul>
-                      </li>
-                  </ul>
-                  <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#"><i class="fas fa-user-plus"></i> Sign Up</a></li> 
-                  </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->      
-	</nav>
-        </div>
+          </div>
+        </nav>
     </div>
-<!-------------navigation bar ends here-------------->
+</div>
+    
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-------------carousel section----------->
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/slide1.jpg" class="d-block w-100" alt="slide one">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <p><a class="btn btn-light btn-lg" href="#">Learn more</a></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/slide2.jpg" class="d-block w-100" alt="slide two">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p><a class="btn btn-light btn-lg" href="#">Learn more</a></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/slide3.jpg" class="d-block w-100" alt="slide three">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        <p><a class="btn btn-light btn-lg" href="#">Learn more</a></p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
 
-	<script src="js/home.js"></script>
+<script src="js/home.js"></script>
+<script src="js/bootstrap.js"></script>
+
 </body>
 
 </html>
+<!--  --><!--  --><!--  --><!--  -->
